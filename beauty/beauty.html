@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/Css/navbar.css">
+<title>MYNTRA</title>
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div id="navbar">
+        <a href="/index.html"> <img id="mainlogo" src="https://cdn.freelogovectors.net/wp-content/uploads/2020/02/myntra-logo-768x768.png"
+            alt="mainlogo"></a>
+            <a href="/men/men.html"><div>MEN</div></a>  
+            <a href="/women/landing_wome.html"><div>WOMEN</div></a>
+            <a href="/kids/kidshome.html"><div>KIDS</div></a>
+            <a href="/home/living.html"><div>HOME & LIVING</div></a>
+            <a href="/beauty/index.html"> <div>BEAUTY</div></a>
+            <a href="/homepage/studio.html"> <div>STUDIO</div></a>
+        <div id="searchbar">
+            <i id="sicon" class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for products, brands and more">
+        </div>
+        <div id="profile">
+           <a  href="/homepage/profile.html"> <i class="fa-regular fa-user"></i></a>
+           <p>Profile</p>
+        </div>
+        <div id="wishlist">
+           <a href="/women/wishlist.html"> <i class="fa-regular fa-heart"></i></a>
+            <p>Wishlist</p>
+        </div>
+        <div id="bag">
+            <a href="/women/bag.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <p>Bag</p>
+        </div>
+    </div>
+    <div id="parent">
+    <div id="filter" >
+        <div id="genderType">
+            <h4>FILTER</h4>
+            <div id="gap"></div>
+            <div id="gap2">
+                <label><input onchange="Men" id="Men" type="checkbox" value="Mens">Men</label>
+                <label><input onchange="Women" id="Women" type="checkbox" value="Women">Women</label>
+                <label><input onchange="Boys" id="Boys" type="checkbox" value="Boys">Boys</label>
+                <label><input onchange="Girls" id="Girls" type="checkbox" value="Girls">Girls</label>
+            </div>
+        </div>
+        
+        <div id="categories">
+            <h4>CATEGORIES</h4>
+            <div id="gap"></div>
+            <div id="gap2">
+                <label><input  onchange="Perfume()" id="Perfume" type="checkbox" value="Perfume"/>Perfume and Body Mist</label>
+                <label><input  onchange="Lipstick()" id="Lipstick" type="checkbox" value="Lipstick"/>Lipstick</label>
+                <label><input  onchange="Body_Wash()" id="Body_Wash" type="checkbox" value="Body_Wash">Body Wash and Scrub</label>
+                <label><input  onchange="shampoo()" id="shampoo" type="checkbox" value="shampoo">Shampoo and Conditioner</label>
+                <label><input  onchange="Nail_Polish()" id="Nail_Polish" type="checkbox" value="Nail_Polish"/>Nail Polish</label>
+                <label><input  onchange="face_wash()" id="face_wash" type="checkbox" value="face_wash"/>Face Wash and Cleanser</label>
+                <label><input  onchange="face_serum()" id="face_serum" type="checkbox" value="face_serum"/>Face Serum and Gel</label>
+                <label><input  onchange="deodorand()" id="deodorand" type="checkbox" value="deodorand"/>Deodorant</label>
+            </div>
+        </div>
+        <div id="brands">
+            <h4>BRAND</h4>
+            <div id="gap"></div>
+            <div id="gap2">
+                <label><input onchange="pink_plum()" id="pink_plum" type="checkbox" value="pink_plum"/>Pink Plum</label>
+                <label><input onchange="miss_claire()" id="miss_claire" type="checkbox" value="miss_claire"/>Miss Claire</label>
+                <label><input onchange="nike()" id="nike" type="checkbox" value="Nike"/>Menjewell</label>
+                <label> <input onchange="lakme()" id="lakme" type="checkbox" value="lakme"/>Lakme</label>
+                <label> <input onchange="rose()" id="rose" type="checkbox" value="rose"/>Miss Rose</label>
+                <label> <input onchange="vibes()" id="vibes" type="checkbox" value="vibes"/>Good Vibes</label>
+                <label> <input onchange="gemblue()" id="gemblue" type="checkbox" value="gemblue"/>Gemblue BioCare</label>
+                <label> <input onchange="ajmal()" id="ajmal" type="checkbox" value="ajmal"/>Ajmal</label>
+            </div>
+        </div>
+        <div id="price">
+            <h4>PRICE</h4>
+            <div id="gap"></div>
+            <div id="gap2">
+                <label> <input onchange="low()" id="low" type="checkbox" value="low"/>Rs. 37 to Rs. 11253</label>
+                <label> <input onchange="medium()" id="medium" type="checkbox" value="medium"/>Rs. 11253 to Rs. 22469</label>
+                <label> <input onchange="high()" id="high" type="checkbox" value="high"/>Rs. 22469 to Rs. 44901</label>
+                
+            </div>
+        </div>
+        <div id="color">
+            <h4>COLOR</h4>
+            <div id="gap"></div>
+            <div id="gap2">
+                <label> <input type="checkbox" value="white"/>White</label>
+                <label> <input type="checkbox" value="black"/>Black</label>
+                <label> <input type="checkbox" value="multi"/>Multi</label>
+                <label> <input type="checkbox" value="pink"/>Pink</label>
+                <label> <input type="checkbox" value="brown"/>Brown</label>
+                <label> <input type="checkbox" value="green"/>Green</label>
+                <label> <input type="checkbox" value="blue"/>Blue</label>
+            </div>
+        </div>
+        <div id="discountrange">
+            <h4>DISCOUNT RANGE</h4>
+            <div id="gap"></div>
+            <div id="gap2">
+                <label> <input onchange="above10()" id="above10" type="checkbox" value="above10"/>10% and above</label>
+                <label> <input onchange="above30()" id="above30" type="checkbox" value="above30"/>30% and above</label>
+                <label> <input onchange="above50()" id="above50" type="checkbox" value="above50"/>50% and above</label>
+                <label> <input onchange="above60()" id="above60" type="checkbox" value="above60"/>60% and above</label>
+                <label> <input onchange="above70()" id="above70" type="checkbox" value="above70"/>70% and above</label>
+            </div>
+        </div>
+    </div>
+    <div >
+        <div class="navbar">
+            <div class="navbarChild">
+                <div>
+                    <select>
+                        <option value>Bundles</option>
+                        <option value="bundles">Bundles</option>
+                        <option value="singlestyles">Single Styles</option>
+                    </select>
+                </div>
+                <div>
+                    <select>
+                        <option value>Country Of Origin</option>
+                        <option value="allcountries">All Countries</option>
+                        <option value="india">India</option>
+                    </select>
+                </div>
+                <div>
+                    <select >
+                        <option value>Size</option>
+                        <Option value="small">S</Option>
+                        <Option value="medium">M</Option>
+                        <Option value="large">L</Option>
+                        <Option value="xl">XL</Option>
+                        <Option value="xxl">XXL</Option>
+                        <option value="0-3M">0-3M</option>
+                        <option value="3-6M">3-6M</option>
+                        <option value="6-12M">6-12M</option>
+                        <option value="12-24M">12-24M</option>
+                        <option value="2-4Y">2-4Y</option>
+                        <option value="4-7Y">4-7Y</option>
+                        <option value="10-20 ML">10-20 ML</option>
+                        <option value="20-50 ML">20-50 ML</option>
+                        <option value="50-100 ML">50-100 ML</option>
+                        <option value="100-300 ML">100-300 ML</option>
+                        <option value="300-600 ML">300-600 ML</option>
+                        <option value="600-1L">600-1L</option>
+                        <option value="1L-5L">1L-5L"</option>
+                        <option value="5L-15L">5L-15L</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <select id="sort" onchange="sorting()" id="sortby">
+                    <option value>Sort By: Recommended</option>
+                    <option value="whatsnew">What's New</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="hightolow">Price: Hight to low</option>
+                    <option value="lowtohigh">Price: Low to high</option>
+                    <option value="rating">Customer Rating</option>
+                </select>
+            </div>
+        </div>
+    <div id="parent2">
+        <div id="products"></div>
+    </div>
+</div>
+</body>
+</html>
+
+<script src="./index.js"></script>

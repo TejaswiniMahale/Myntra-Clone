@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kids page</title>
+    <link rel="stylesheet" href="./round check.css" />
+    <link rel="stylesheet" href="./wishlist checkbox.css" />
+    <link rel="stylesheet" href="./navbar.css"/>
+    <link rel="stylesheet" href="/kids/kidspage.css"/>
+    <link rel="stylesheet" href="/Css/footer.css"/>
+    <link rel="stylesheet" href="/Css/navbar.css">
+    <script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="container">
+
+
+        <div id="navbar">
+            <img id="mainlogo" src="https://cdn.freelogovectors.net/wp-content/uploads/2020/02/myntra-logo-768x768.png"
+                alt="mainlogo">
+            <div>MEN</div>
+            <div>WOMEN</div>
+            <div>KIDS</div>
+            <div>HOME & LIVING</div>
+            <div>BEAUTY</div>
+            <div>STUDIO</div>
+            <div id="searchbar">
+                <i id="sicon" class="fa-solid fa-magnifying-glass"></i>
+                <input id="input"type="text" placeholder="Search for products, brands and more">
+            </div>
+            <div id="profile" >
+                <i class="fa-regular fa-user"></i>
+                <p>Profile</p>
+            </div>
+            <div id="wishlist" value="wishlist">
+                <i class="fa-regular fa-heart"></i>
+                <p id="wishlisttag">Wishlist</p>
+            </div>
+            <div id="bag" value="bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p id="bagtag">Bag</p>
+            </div>
+        </div>
+
+
+        <div id="upper">
+            <div id="upperFirst">
+                <div id="type">
+                    <a href="kids.html">Home</a>/<b>Ki Etnhc</b>
+                </div>
+                <div id="typetotal"><b>Ki Etnhc</b> - Total</div>
+                <div id="filter"><b>FILTERS</b></div>
+            </div>
+            <div id="upperSecond">
+                <div id="ageDiv">
+                    <select id="dropdownAgeFilter" onchange="getSelectValue();">
+                        <option value="">Age</option>
+                        <option value="">5Y-6Y</option>
+                        <option value="">7Y-8Y</option>
+                        <option value="">9Y-10Y</option>              
+                    </select>
+                </div>
+                <div id="bundlesDiv">
+                    <select id="dropdownBundlesFilter" onchange="getSelectValue();">
+                        <option value="">Bundles</option>
+                        <option value="">Single Styles</option>
+                    </select>
+                </div>
+                <div id="countryDiv">
+                    <select id="dropdownCountryFilter" onchange="getSelectValue();">
+                        <option value="">Country of Origin</option>
+                        <option value="">All Countries</option>
+                        <option value="">India</option>
+                    </select>
+                </div>
+            </div>
+            <div id="upperThird">
+                <select onchange="sortby()"  id="sortby">
+                    <option value="">Sort by: <b>Recommended</b> </option>
+                    <option value="hightolow">High to Low</option>
+                    <option value="lowtohigh">Low to High</option>
+                </select>
+            </div>
+        </div>
+        <div id="product">
+            <div id="filterDiv">
+                <div id="gender">
+                    <div class="round">
+                        <input  onchange="boys()" checked id="checkbox" type="checkbox" value="boys" />Boys
+                        <label for="checkbox"></label>
+                    </div>
+                    <div class="round">
+                        <input type="checkbox" checked id="checkbox" />Girls
+                        <label for="checkbox"></label>
+                    </div>
+                </div>
+                
+                <div id="categories">
+                    <h4>CATEGORIES</h4>
+                    
+                        <label><input  onchange="sherwani()" id="sherwani" type="checkbox" value="sherwani"/>Sherwani</label>
+                        <label><input  onchange="dresses()" id="dresses" type="checkbox" value="dresses"/>Dresses</label>
+                        <label><input onchange="shirt()" id="shirt" type="checkbox" value="shirt">Shirt</label>
+                        <label><input onchange="kurta()" id="kurta" type="checkbox" value="kurta">Kurta</label>
+                        <label><input  onchange="co-ords()" id="co-ords" type="checkbox" value="co-ords"/>Co-ords</label>
+                        
+                </div>
+                
+                <div id="brands">
+                    <h4>BRANDS</h4>
+                        <label><input onchange="VASTRAMAY()" id="VASTRAMAY" type="checkbox" value="VASTRAMAY"/>VASTRAMAY</label>
+                        <label><input onchange="Jbn()" id="Jbn" type="checkbox" value="JBN Creation"/>JBN Creation</label>
+                        <label><input onchange="BownBee()" id="BownBee" type="checkbox" value="BownBee"/>BownBee</label>
+                </div>
+                
+                <div id="price">
+                    <h4>PRICE</h4>
+                        <label> <input onchange="Rs0toRs500()" id="Rs0toRs500" type="checkbox" value="Rs0toRs500"/>Rs.0 to Rs.500</label>
+                        <label> <input onchange="Rs501toRs1000()" id="Rs501toRs1000" type="checkbox" value="Rs501toRs1000"/>Rs.501 to Rs.1000</label>
+                        <label> <input onchange="Rs1001toRs1500()" id="Rs1001toRs1500" type="checkbox" value="Rs1001toRs1500"/>Rs.1001 to Rs.1500</label>
+                        <label> <input onchange="Rs1501toRsabove()" id="Rs1501toRsabove" type="checkbox" value="Rs1501toRsabove"/>Rs.1501 and above</label>
+                </div>
+                
+                <div id="color">
+                    <h4>COLOR</h4>
+                        <label> <input onchange="white()" id="white" type="checkbox" value="white"/>White</label>
+                        <label> <input onchange="black()" id="black" type="checkbox" value="black"/>Black</label>
+                        <label> <input onchange="red()" id="red" type="checkbox" value="red"/>Red</label>
+                </div>
+                
+                <div id="discountrange">
+                    <h4>DISCOUNT RANGE</h4>
+                        <label> <input onchange="off1()" id="50%OFF" type="checkbox" value="50"/>50% OFF</label>
+                        <label> <input onchange="off()" id="55%OFF" type="checkbox" value="55"/>55% OFF</label>
+                </div>
+                
+            </div>
+            <div id="productDiv"></div>
+        </div>
+
+
+        <div id="footer">
+            <div id="mainDiv">
+                <div id="d">
+                    <p>ONLINE SHOPPING</p>
+                    <p>Men</p>
+                    <p>Women</p>
+                    <p>Kids</p>
+                    <p>Home & Living</p>
+                    <p>Beauty</p>
+                    <p> Gift Cards</p>
+                    <p>Myntra insider</p>
+                </div>
+                <div id="e">
+                    <p> USEFUL LINKS</p>
+                    <p>Contact Us</p>
+                    <p>FAQ</p>
+                    <p>T&C</p>
+                    <p>Terms Of Use</p>
+                    <p>Track Orders</p>
+                    <p>Shipping</p>
+                    <p>Cancellation</p>
+                    <p>Returns</p>
+                    <p>Whitehat</p>
+                    <p>Blog</p>
+                    <p>Careers</p>
+                    <p>Privacy policy</p>
+                    <p>Site Map</p>
+                </div>
+                <div id="f">
+                    <p>EXPERIENCE MYNTRA APP ON MOBILE</p>
+                    <div id="playstore">
+                        <img src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
+                        alt="">
+                        <img src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"
+                        alt="">
+                    </div>
+                    <p>KEEP IN TOUCH</p>
+                    <div id="socialicon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div id="g">
+                    <div id="subDiv">
+                        <div class="subdiv">
+                            <img src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png"
+                            alt="">
+                        <p> <b>100% ORIGINAL</b> guarantee for all products at myntra.coma</p>
+                    </div>
+                    <div class="subdiv">
+                        <img src="https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png"
+                            alt="">
+                            <p><b>Return within 30days</b> of receiving your order</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pline">
+            <h5>POPULAR SEARCHES</h5>
+            <div></div>
+        </div>
+        <div id="pDiv">
+            <p> Makeup | Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men | Handbags |
+                Ladies Watches |
+                Bags | Sport Shoes | Reebok Shoes | Puma Shoes | Boxers | Wallets | Tops | Earrings | Fastrack Watches |
+                Kurtis | Nike | Smart
+                Watches | Titan Watches | Designer Blouse | Gowns | Rings | Cricket Shoes | Forever 21 | Eye Makeup |
+                Photo Frames |
+                Punjabi Suits | Bikini | Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike
+                Shoes | Goggles Bras |
+                Suit | Chinos Shoes| Adidas Shoes| Woodland Shoes| Jewellery| Designers Sarees</p>
+                <div id="pterm">
+                    <p>In case of any concern, <b>Contact Us</b></p>
+                    <p>© 2022 www.myntra.com. All rights reserved.</p>
+                    </div>
+                </div>
+            
+        </div>
+</body>
+</html>
+<script src="./filter.js"></script>
+<script src="./kidsdata.js"></script>
+<script src="./kidspage.js"></script>
+

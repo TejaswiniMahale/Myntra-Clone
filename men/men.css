@@ -1,0 +1,110 @@
+
+h1{
+    margin-left: 15px;
+    padding: 10px;
+}
+#adDiv
+{
+   margin-top:50px;
+} 
+#dealsDiv{
+   
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: auto;
+    gap: 2%;
+}
+#bigdealsDiv{
+   
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 2%;
+}
+#categoryDiv{
+  
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows: repeat(1,auto);
+    column-gap: 2%;
+}
+#brandDiv{
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(1,auto);
+    column-gap: 2%;
+}
+#categoryDiv>div,#brandDiv>div{
+    background-color:whitesmoke;
+}
+#luxeDiv{
+   
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows: auto;
+    gap: 2%;
+}
+#trendDiv{
+   
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: auto;
+    gap: 2%;
+}
+#indianwear{
+   
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 2%;
+}
+#sportwear{
+   
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 2%;
+}
+#footwear{
+   
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 2%;
+}
+#footwear{
+   
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 2%;
+}
+#accessories{
+   
+    width:92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 2%;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css/bed.css">
+    
+    <style>
+      
+    </style>
+</head>
+<body>
+    <button id="GOTOCART"  onclick="window.location.href='AddToC.html'"> Go tO Cart</button>
+
+    <div id="div"></div>
+</body>
+</html>
+<script src="./JS/bed.js" ></script>
+<script>
+ 
+var living1=JSON.parse(localStorage.getItem("beddata"))
+ 
+
+var cartarr=JSON.parse(localStorage.getItem("Cartsave")) || [];
+  
+  console.log(cartarr)
+ 
+living1.map(function(elem,index,array){
+
+        var div = document.createElement("div")
+    
+      
+        div.style.height="80%";
+        div.style.width="80%";
+
+        var img = document.createElement("img")
+        img.setAttribute("src",elem.img)
+       
+        img.style.width="90%";
+        img.style.height="80%";
+
+       var name = document.createElement("h2")
+       name.innerText=elem.name;
+       
+       var price = document.createElement("h5")
+       price.innerText=elem.price;
+
+
+
+       
+    var cart = document.createElement("button");
+     cart.innerText="AddtoCart"
+     cart.addEventListener("click",function(){
+        //  window.location.href="addtocart.html"
+        addtocart(elem)
+         
+     })
+       div.append(img,name,price,cart)
+       document.querySelector("#div").append(div)
+})
+
+function addtocart(elem)
+
+{
+    alert("item Added To  Cart");
+    cartarr.push(elem)
+    localStorage.setItem("Cartsave",JSON.stringify(cartarr))
+}
+console.log(cartarr)
+
+</script>

@@ -1,0 +1,68 @@
+
+#adDiv
+{
+   margin-top:50px;
+
+} 
+#dealsDiv{
+   
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: auto;
+    
+}
+#bigdealsDiv{
+   
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(2,auto);
+    
+}
+#categoryDiv{
+  
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows: repeat(1,auto);
+   
+}
+#brandDiv{
+  
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(1,auto);
+   
+}
+#categoryDiv>div,#brandDiv>div{
+    background-color:whitesmoke;
+}
+#luxeDiv{
+   
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows: auto;
+    
+}
+#trendDiv{
+    
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows:auto;
+    margin-left: 20px;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+

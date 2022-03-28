@@ -1,0 +1,219 @@
+
+a:link{
+    text-decoration: none;
+}
+body>h1{
+    padding: 15px;
+    color: gray;
+}
+#navbar{
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-weight: bold;  
+}
+#mainlogo{
+    width: 60px;
+    height:60px;
+    background-color: white;
+}
+#midDiv{
+    letter-spacing:3px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+
+}
+#midDiv>h5:last-child{
+    color:#3cc3a0;
+   border-bottom:#3cc3a0 2px solid;
+}
+#endDiv{
+    width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+}
+#endDiv>img{
+   width: 30px;
+}
+p>b{
+    letter-spacing:3px;
+}
+.line{
+    border-top: 1px dashed;
+    width: 50px;
+}
+
+/* end of navbar */
+
+p{
+    font-size: 14px;
+
+}
+
+
+#cart{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    padding:20px;
+}
+#mainDiv{
+   width:65%;
+   padding:10px; 
+   border-right:2px solid #e9e9ed;
+}
+#mainDiv>div:first-child{
+    line-height: 1;
+    margin-top: 10px;
+    border:1px solid #e9e9ed;
+    padding: 0px 20px;
+}
+h4+p+p{
+    color: #ff3e6c;
+}
+#payment{
+    border: 1px solid #e9e9ed;
+    display: flex;
+
+}
+#mode{
+    width: 40%;
+    margin-right: 30px;
+}
+#mode>div{
+    padding: 0px 10px;
+    display: flex;
+    border: 1px solid #e9e9ed;
+    align-items: center;
+    background-color: whitesmoke;
+}
+#mode>div:hover{
+    background-color: white;
+}
+i{
+    margin-right: 10px;
+}
+#infopay{
+    background-color: whitesmoke;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+#pay{
+    border-radius: 5px;
+    width: 80%;
+    height: 50px;
+    background-color:#ff3e6c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
+#paymentDiv{
+    color: black;
+}
+#paymentDiv input{
+    color: gray;
+    width: 90%;
+    height: 40px;
+    border: 1px solid #e9e9ed;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+#cvvDiv{
+width: 90%;
+display: flex;
+justify-content: space-between;
+}
+#cvvDiv>input{
+    width: 40%;
+    display: flex;
+    }
+#lastBox{
+    padding: 0px 10px;
+    margin-top: 20px;
+    display: flex;
+    border: 1px solid #e9e9ed;
+    align-items: center;
+    justify-content: space-between;
+}
+#lastBox>div:first-child{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+#lastBox>div:last-child{
+    color: #ff3e6c;
+}
+#checkDiv{
+    width: 30%;
+}
+
+#total{
+    color: gray;
+    font-size: 15px;
+    font-weight: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #e9e9ed;
+
+}
+#total>div:nth-child(2){
+    text-align: right;
+    padding-top: 40px;
+}
+p>b{
+    margin-left: 5px;
+    letter-spacing: 1px;
+    color: #ff3e6c;
+}
+#free{
+    color: #3cc3a0;
+    width: 80px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    justify-content: space-between;
+}
+#free>p:first-child{
+    text-decoration: line-through;
+    color: gray;
+}
+#totalamount{
+    margin-top: 10px;
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+    justify-content: space-between;
+}
+#place{
+    width: 100%;
+    height: 40px;
+    margin-top:10px;
+    background-color:#ff3e6c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
+

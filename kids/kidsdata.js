@@ -1,0 +1,583 @@
+var kidsData = [
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15465334/2021/9/15/27b40aa5-9e3c-4264-b5d8-b5d7d90173171631711524796VastramayBoysMaroonAndRoseGoldIndowesternSherwaniandCowldhot1.jpg",
+        brand:"VASTRAMAY",
+        gender:"Boy",
+        category:"sherwani",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"55% OFF",
+        colour:"red",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17007332/2022/2/1/163b0358-8b70-48dc-90ed-2786ea3825911643714174388BownBeeGirlsCottonHalfSleeveTShirtwithDhoti-White1.jpg",
+        brand:"BownBee",
+        gender:"Girl",
+        category:"co-ords",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"50% OFF",
+        colour:"white",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14068154/2021/4/12/74fd2e17-e62a-498b-8282-fc616b419ee21618231415418AarikaGirlsWhite1.jpg",
+        brand:"JBN Creation",
+        gender:"Girl",
+        category:"co-ords",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"55% OFF",
+        colour:"white",
+
+    },
+    
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/6/12/14d39b0a-d9d6-45be-bedf-efc211b4c6051560319215710-1.jpg",
+        brand:"JBN Creation",
+        gender:"Boy",
+        category:"sherwani",
+        price:"Rs.1749",
+        strikeoffprice:"Rs.3499",
+        off:"50% OFF",
+        colour:"red",
+
+    },
+    
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/3/12/19189105-1882-4a96-a230-b579169ce6711583994571724-1.jpg",
+        brand:"BownBee",
+        gender:"Boy",
+        category:"sherwani",
+        price:"Rs.1908",
+        strikeoffprice:"Rs.4899",
+        off:"55% OFF",
+        colour:"black",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7141799/2018/8/14/7b640493-3f8c-429a-a917-c678ea28eab11534229100846-VASTRAMAY-Boys-Black--Gold-Toned-Banarasi-Silk-Cotton-Sherwani-Set-1381534229100588-1.jpg",
+        brand:"JBN Creation",
+        gender:"Boy",
+        category:"sherwani",
+        price:"Rs.1199",
+        strikeoffprice:"Rs.2499",
+        off:"55% OFF",
+        colour:"black",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15699538/2021/10/2/7dc2470f-e4ec-42b2-84df-92d89b0975c11633156397155BownBeeBoysBlackCream-ColouredPrintedSherwani3.jpg",
+        brand:"VASTRAMAY",
+        gender:"Boy",
+        category:"sherwani",
+        price:"Rs.979",
+        strikeoffprice:"Rs.2279",
+        off:"50% OFF",
+        colour:"black",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/12/1/57c44928-2f7f-4fe7-b24c-96a493a0977c1606825088209-1.jpg",
+        brand:"BownBee",
+        gender:"Boy",
+        category:"sherwani",
+        price:"Rs.1200",
+        strikeoffprice:"Rs.1254",
+        off:"50% OFF",
+        colour:"white",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15699536/2021/10/2/2707de85-f4f2-4f94-8573-9a6517ecf4761633177938102BownBeeBoysWhiteGold-ColouredPrintedSilkSherwani1.jpg",
+        brand:"JBN Creation",
+        gender:"Boy",
+        category:"sherwani",
+        price:"Rs.865",
+        strikeoffprice:"Rs.2563",
+        off:"50% OFF",
+        colour:"white",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16595354/2021/12/23/b1beae9f-438a-48a7-b7aa-b50b8a976bb71640247059750PothysBoysWhiteBluePrintedSherwaniSet1.jpg",
+        brand:"VASTRAMAY",
+        gender:"Boy",
+        category:"sherwani",
+        price:"Rs.1237",
+        strikeoffprice:"Rs.1988",
+        off:"55% OFF",
+        colour:"white",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/13931988/2021/5/10/93a84d31-7eaa-4cdb-b7f3-80eb092af1291620637112007THANGAMAGANBoysRedOriginalRegularFitSolidCasualShirt1.jpg",
+        brand:"BownBee",
+        gender:"Boy",
+        category:"shirt",
+        price:"Rs.1840",
+        strikeoffprice:"Rs.3212",
+        off:"50% OFF",
+        colour:"red",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/13931984/2021/5/10/4a63f95f-94e5-4a94-8a81-d7e70b4431ed1620637115960THANGAMAGANBoysRedOriginalRegularFitSolidCasualShirt1.jpg",
+        brand:"JBN Creation",
+        gender:"Boy",
+        category:"shirt",
+        price:"Rs.1840",
+        strikeoffprice:"Rs.3212",
+        off:"50% OFF",
+        colour:"red",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/13932020/2021/5/10/37290b63-a401-4f92-8313-3954d49c3dfb1620637122632THANGAMAGANBoysRedRegularFitSolidCasualShirt1.jpg",
+        brand:"VASTRAMAY",
+        gender:"Boy",
+        category:"shirt",
+        price:"Rs.1212",
+        strikeoffprice:"Rs.1340",
+        off:"55% OFF",
+        colour:"red",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/13880370/2021/10/8/027b2920-87ca-47f4-a562-ad2f5d96dcb01633698029715-Sangria-Girls-White--Blue-Ethnic-Motifs-Print-Pure-Cotton-A--11.jpg",
+        brand:"BownBee",
+        gender:"Girl",
+        category:"dresses",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"50% OFF",
+        colour:"white",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/9/17/9e950eed-65ea-4587-9fcc-e05ea55653fc1568698448828-1.jpg",
+        brand:"BownBee",
+        gender:"Girl",
+        category:"co-ords",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"55% OFF",
+        colour:"red",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15152176/2021/8/16/3a5fa624-932f-4222-a81a-83ef3fc98fb01629129145891VASTRAMAYBoysBlackOpaqueCasualShirt1.jpg",
+        brand:"VASTRAMAY",
+        gender:"Boy",
+        category:"shirt",
+        price:"Rs.1212",
+        strikeoffprice:"Rs.2988",
+        off:"50% OFF",
+        colour:"black",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/13931990/2021/5/7/2b258e9b-bbf6-494b-aa0c-dedcbb9fbad41620388905343THANGAMAGANBoysWhiteRegularFitSolidEthnicSilkShirt1.jpg",
+        brand:"BownBee",
+        gender:"Boy",
+        category:"shirt",
+        price:"Rs.456",
+        strikeoffprice:"Rs.1256",
+        off:"55% OFF",
+        colour:"white",
+
+    },
+    
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16920798/2022/1/24/527f3b56-f373-4281-b3be-6f3459d094f81643024459684titliyanBoysRedPaisleyKurta1.jpg",
+        brand:"JBN Creation",
+        gender:"Boy",
+        category:"kurta",
+        price:"Rs.999",
+        strikeoffprice:"Rs.2600",
+        off:"55% OFF",
+        colour:"red",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15787366/2021/10/9/f27b2779-fd77-42fc-8d0a-f13262ac0b811633770542604KRAFTINDIABoysRedKeyholeNeckFlaredSleevesThreadWorkKurta1.jpg",
+        brand:"VASTRAMAY",
+        gender:"Boy",
+        category:"kurta",
+        price:"Rs.860",
+        strikeoffprice:"Rs.2425",
+        off:"55% off",
+        colour:"red",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17007312/2022/2/1/077b1fad-e7e0-4021-b342-6dd351ae054d1643716887880BownBeeBoysBlockPrintCottonKurtaforBoys-Red1.jpg",
+        brand:"VASTRAMAY",
+        gender:"Boy",
+        category:"kurta",
+        price:"Rs.650",
+        strikeoffprice:"Rs2121",
+        off:"55% off",
+        colour:"red",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/5/18/499604d3-1a85-4894-b3f0-b54cafc96f0d1621312359689-1.jpg",
+        brand:"JBN Creation",
+        gender:"Boy",
+        category:"kurta",
+        price:"Rs.630",
+        strikeoffprice:"Rs.1788",
+        off:"50% OFF",
+        colour:"black",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/5/21/d89195f0-666d-4496-8436-b4e2bf234b4d1621597964572-1.jpg",
+        brand:"JBN Creation",
+        gender:"Boy",
+        category:"kurta",
+        price:"Rs.520",
+        strikeoffprice:"Rs.1860",
+        off:"50% OFF",
+        colour:"black",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15508140/2021/9/18/f89f6495-c7c5-4f18-9e0e-18830b21b7901631925408679NAMASKARBoysBlackEthnicMotifsKurta1.jpg",
+        brand:"BownBee",
+        gender:"Boy",
+        category:"kurta",
+        price:"Rs.999",
+        strikeoffprice:"Rs2145",
+        off:"55% OFF",
+        colour:"black",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15317978/2021/8/31/199d6c01-18e1-4ffb-a666-8de7590361c41630403547612VASTRAMAYBoysWhiteGeometricThreadWorkJacquardKurta1.jpg",
+        brand:"BownBee",
+        gender:"Boy",
+        category:"kurta",
+        price:"Rs.460",
+        strikeoffprice:"Rs.2100",
+        off:"55% OFF",
+        colour:"white",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15787346/2021/10/10/953af298-1f55-45e6-b7fd-3e41d0b9b0341633870063483KRAFTINDIABoysWhiteGeometricEmbroideredChikankariKurta1.jpg",
+        brand:"JBN Creation",
+        gender:"Boy",
+        category:"kurta",
+        price:"Rs.999",
+        strikeoffprice:"Rs.1456",
+        off:"50% OFF",
+        colour:"white",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15508178/2021/9/17/6b5e6635-6f57-4fc9-bb28-f815d4c971e81631864904263NAMASKARBoysWhiteFloralPrintedThreadWorkKurta1.jpg",
+        brand:"JBN Creation",
+        gender:"Boy",
+        category:"kurta",
+        price:"Rs.456",
+        strikeoffprice:"Rs.1456",
+        off:"50% OFF",
+        colour:"white",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/1/5/141c4061-a045-44e7-a311-7cea62640af61546646723048-1.jpg",
+        brand:"VASTRAMAY",
+        gender:"Girl",
+        category:"kurta",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"50% OFF",
+        colour:"red",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14993264/2021/12/23/74b80eb2-6333-4e87-869e-47a7eedc765f1640264156086-Sangria-Girls-Red--Gold-Ethnic-Motifs-Print-Regular-Cotton-K-1.jpg",
+        brand:"JBN Creation",
+        gender:"Girl",
+        category:"kurta",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"55% OFF",
+        colour:"red",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17007344/2022/2/1/ae92841e-3329-4038-873b-6f5d33a3ceb71643714110401BownBeeGirlsBlockPrintCottonKurtaforGirls-Red1.jpg",
+        brand:"BownBee",
+        gender:"Girl",
+        category:"kurta",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"50% OFF",
+        colour:"red",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/7/11/a5d3f018-d9dc-405f-8aed-edda441beead1594418925736-1.jpg",
+        brand:"VASTRAMAY",
+        gender:"Girl",
+        category:"kurta",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"50% OFF",
+        colour:"white",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16689254/2022/1/5/13268117-a17c-4be4-8458-a3055fec828d1641367673032LittleBansiGirlsWhiteFloralEmbroideredTopwithSkirtWithDupatt1.jpg",
+        brand:"JBN Creation",
+        gender:"Girl",
+        category:"kurta",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"55% OFF",
+        colour:"white",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/1/5/6cb6779b-6000-4a15-840d-becf2488b8711546646761396-1.jpg",
+        brand:"JBN Creation",
+        gender:"Girl",
+        category:"kurta",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"55% OFF",
+        colour:"black",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16418110/2021/12/8/6eecca90-748a-4a6e-93a9-e303a8aa01071638939417622BitiyabyBhamaGirlsBlackFloralEmpireKurtiwithPalazzos1.jpg",
+        brand:"BownBee",
+        gender:"Girl",
+        category:"kurta",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"55% OFF",
+        colour:"black",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/2/11/44b505e8-55ab-42ec-a5fa-da351d4081921613045874762-1.jpg",
+        brand:"VASTRAMAY",
+        gender:"Girl",
+        category:"kurta",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"50% OFF",
+        colour:"black",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11171636/2020/2/14/6edfd947-4f65-4821-a9de-b7147bc16af61581671255450-Sangria-Girls-Kurtas-4291581671253926-1.jpg",
+        brand:"VASTRAMAY",
+        gender:"Girl",
+        category:"dresses",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"50% OFF",
+        colour:"white",
+
+    },
+    
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16689264/2022/1/5/2e766fb2-e340-49ef-a9bd-db18e21dbd2a1641361148926KurtaSets1.jpg",
+        brand:"BownBee",
+        gender:"Girl",
+        category:"kurta",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"50% OFF",
+        colour:"white",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14993466/2022/1/25/690b996c-a2f8-44f7-a0f4-7a607f9f94fd1643113369279-Sangria-Girls-Red--Golden-Ethnic-Motifs-Print-Fit-and-Flare--1.jpg",
+        brand:"VASTRAMAY",
+        gender:"Girl",
+        category:"dresses",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"55% OFF",
+        colour:"red",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14993418/2021/12/23/ec509a04-7898-41f5-84e7-379ac7d121f31640264316941-Sangria-Girls-Red--White-Ethnic-Motifs-Printed-Flared-Sleeve-1.jpg",
+        brand:"JBN Creation",
+        gender:"Girl",
+        category:"dresses",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"50% OFF",
+        colour:"red",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15271556/2021/8/26/59d68c77-da31-41ad-abf3-4271c0103a7a1629985067987BETTYOrangeFloralJacquardMaxiDress1.jpg",
+        brand:"BownBee",
+        gender:"Girl",
+        category:"dresses",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"50% OFF",
+        colour:"red",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/8710857/2021/6/2/a940baea-51fb-4213-9540-886ea2d328fe1622615366947-Sangria-Girls-Black-Embroidered-Detail-A-Line-Dress-81416226-1.jpg",
+        brand:"VASTRAMAY",
+        gender:"Girl",
+        category:"dresses",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"55% OFF",
+        colour:"black",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14993640/2021/9/29/23907f95-c4f4-4fa7-b84a-9471f5e8291c1632905543656-Sangria-Girls-Black--Gold-Ethnic-Motifs-Print-Fit--Flare-Dre-1.jpg",
+        brand:"JBN Creation",
+        gender:"Girl",
+        category:"dresses",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"50% OFF",
+        colour:"black",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17077612/2022/2/7/91eea4b0-a146-4860-8231-c50f2c5299ea1644244932194MANYFROCKSBlackEthnicMotifsDress1.jpg",
+        brand:"BownBee",
+        gender:"Girl",
+        category:"dresses",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"55% OFF",
+        colour:"black",
+
+    },
+    
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15564044/2021/9/22/dc748141-00d7-4248-83c5-21857fb8f6e91632294593753AshneetaWhiteEthnicDress1.jpg",
+        brand:"JBN Creation",
+        gender:"Girl",
+        category:"dresses",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"55% OFF",
+        colour:"white",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15699540/2021/10/1/5a489f09-eb4c-4094-91f9-8d8028f6e9821633073838316BownBeeBoysRedGold-ColouredPrintedSherwani1.jpg",
+        brand:"BownBee",
+        gender:"Boy",
+        category:"sherwani",
+        price:"Rs.999",
+        strikeoffprice:"Rs.2439",
+        off:"50% OFF",
+        colour:"red",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12764170/2020/12/15/974b93db-8a87-4b74-a11a-82660c27e4e11608009187887JBNCreationBoysWhiteRegularFitSolidFormalShirt1.jpg",
+        brand:"JBN Creation",
+        gender:"Boy",
+        category:"shirt",
+        price:"Rs.420",
+        strikeoffprice:"Rs.2645",
+        off:"55% OFF",
+        colour:"white",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15664972/2021/9/29/24553456-401f-4d6d-9fb4-91cacb25699f1632868975870SethukrishnaBoysWhiteClassicOpaqueSemiformalShirt1.jpg",
+        brand:"VASTRAMAY",
+        gender:"Boy",
+        category:"shirt",
+        price:"Rs.560",
+        strikeoffprice:"Rs.2324",
+        off:"50% OFF",
+        colour:"white",
+
+    },
+    
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15737516/2021/10/5/e1356970-90e8-4591-9cb6-f37bc9b347fd1633429949725AshneetaRedPrintedkurtiwithdhotiforGirls1.jpg",
+        brand:"JBN Creation",
+        gender:"Girl",
+        category:"co-ords",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"50% OFF",
+        colour:"red",
+
+    },
+    
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15347220/2021/12/30/04a221b0-4e5b-4818-a765-3e93b03982641640848644808-Global-Desi-Girls-Red--Teal-Blue-Printed-Kurta-with-Sharara--1.jpg",
+        brand:"VASTRAMAY",
+        gender:"Girl",
+        category:"co-ords",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"55% OFF",
+        colour:"red",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14929292/2021/7/26/08962631-6521-462b-9da5-b2408311c4ed1627275469625na6.jpg",
+        brand:"BownBee",
+        gender:"Girl",
+        category:"co-ords",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"50% OFF",
+        colour:"black",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/2/10/90e11b1e-b588-4d3c-b687-c7606bcb985c1612957991448-1.jpg",
+        brand:"JBN Creation",
+        gender:"Girl",
+        category:"co-ords",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"50% OFF",
+        colour:"black",
+
+    },
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14820886/2021/7/14/1d301ea7-4f0e-4256-a422-3c0b8fc81b1f1626255623280LilPeacockDesignerOrangeTopWithPrintedPalazzoSetforGirls1.jpg",
+        brand:"VASTRAMAY",
+        gender:"Girl",
+        category:"co-ords",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"55% OFF",
+        colour:"black",
+
+    },
+    
+    {
+        image:"https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14883430/2021/8/12/b9c70404-a6f0-4203-8e73-910968e56ac11628766998572-Tiny-Bunnies-Unisex-Kids-White--Brown-Top-with-Pyjamas-10816-1.jpg",
+        brand:"VASTRAMAY",
+        gender:"Girl",
+        category:"co-ords",
+        price:"Rs.1799",
+        strikeoffprice:"Rs.3999",
+        off:"55% OFF",
+        colour:"white",
+
+    },
+];
+localStorage.setItem("kidsD", JSON.stringify(kidsData));

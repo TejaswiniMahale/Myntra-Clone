@@ -1,0 +1,117 @@
+#container{
+    /* border: 3px solid red; */
+    width: 100%;
+}
+
+/* Upper---------------------------------------------------------------------------------- */
+#upper{
+    /* border: 2px solid blue; */
+    height: 100px;
+    display:flex;
+    border-bottom: 1px solid black;
+}
+#product{
+    /* border: 2px solid yellow; */
+    /* height: 640px; */
+    display:flex ;
+}
+#filterDiv{
+    width:15%
+}
+#filterDiv input{
+    width: 15px;
+    height: 15px;
+    margin-right: 12px;
+}
+#filterDiv>div{
+    display:grid;
+    padding-left:10px;
+}
+.round{
+    display:flex;
+}
+#upper>div{
+    /* border: 1px solid black; */
+    width: 500px;    
+}
+#product>div{
+    margin-top:20px;
+}
+
+ /*  Upper first of three-------------------------------------- */
+#upperFirst{
+    display: grid;
+    margin-right:-80px ;
+}
+#upperFirst>div{
+    padding-left: 20px;
+}
+#type{
+    /* border: 2px solid yellow; */
+    padding: 4px 0px 0px 7px;
+    font-size: 14px;
+}
+#typetotal{
+    /* border: 2px solid yellow; */
+    padding: 4px 0px 0px 7px;
+    font-size: 16px;
+}
+#filter{
+    
+    padding: 4px 0px 0px 7px;
+    font-size: 16px;
+}
+
+/* Upper second of three---------------------------------------- */
+#upperSecond{
+    display:flex;
+    padding-top: 70px;
+    gap: 25px;
+    justify-content: left;
+    padding-right: 500px;
+}
+#dropdownAgeFilter{
+    border: 1px solid white;
+}
+#dropdownBundlesFilter{
+    border: 1px solid white;
+}
+#dropdownCountryFilter{
+    border: 1px solid white;
+}
+#upperSecond>div>select:hover{
+    background-color: rgb(235, 235, 235);
+    border-radius: 20px;
+}
+
+/* Upper third of three-------------------------------------------- */
+#upperThird{
+    text-align:right; padding: 70px 5px 0px 0px;
+}
+
+
+/* Product----------------------------------------------------------- */
+#productDiv{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    gap: 60px;
+    /* text-align: center; */
+    /* padding: 0px 0px 0px 90px; */
+    margin: auto;
+}
+.pDiv:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.innerDiv{
+    display:flex;
+    gap:2px;
+    margin-top: -25px;
+    font-size: 14px;
+    /* padding-left: 25px; */
+}
+.pDiv>img{
+    height:230px;
+    width:100%;
+    padding:0px 0px 0px 0px;  
+}

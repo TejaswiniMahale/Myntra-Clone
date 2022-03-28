@@ -1,0 +1,74 @@
+#signupDiv {
+    width: 30%;
+    margin: auto;
+    box-sizing: border-box;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 3%;
+    padding: 60px;
+
+}
+#passinfo{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#passinfo>div{
+    width: 22%;
+    height: 30px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    border: #e9e9ed 1px solid;
+}
+h3 {
+    margin-bottom: 20px;
+}
+
+ #signupDiv input {
+    padding-left: 10px;
+    width: 100%;
+    border: 2px solid #e9e9ed;
+    margin-top: 20px;
+    color: black;
+}
+div>input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 1.5em;
+    margin-bottom: 16px;
+}
+#genderDiv {
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#genderDiv>div {
+    box-sizing: border-box;
+    width: 30%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+p {
+    color: gray;
+    font-size:12px;
+}
+
+p>b {
+    color: #ff3e6c;
+}
+
+#signupbtn{
+    margin-top: 10px;
+    width: 100%;
+    background-color: #ff3e6c;
+    color: white !important;
+    font-weight: bold;
+}

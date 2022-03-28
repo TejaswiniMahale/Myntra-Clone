@@ -1,0 +1,53 @@
+h1{
+    font-size:28px;
+    margin: 50px 0px 50px 70px;
+    font-family: sans-serif;
+}
+img{
+    width:100%
+}
+#sub1>img{
+    margin-top: 30px;
+    width: 100%;
+}
+#sub2>div{
+    display:grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(1,1fr);
+    
+}
+#sub3>div{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+#sub4>div{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+#sub5>div{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+#sub6>div{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+#sub7>div{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+#sub8>div{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+#sub9>div{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(1,1fr);
+}

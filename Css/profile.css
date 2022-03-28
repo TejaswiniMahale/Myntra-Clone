@@ -1,0 +1,58 @@
+body {
+    background-color: #fdeef0;
+}
+#loginDiv{
+    width:26%;
+    margin: auto;
+    margin-top:2%;
+    padding-bottom: 100px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#lAnds{
+    display: flex;
+    justify-content: space-around;
+    width:45%;
+    align-items: center;
+    padding-left:8%;
+}
+h2+p{
+color: gray;
+font-size: 20px;
+}
+#inputDiv{
+    display: flex;
+  border: #e9e9ed solid 2px;
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    align-items: center;
+}
+p+input{
+    width: 80%;
+    color: gray;
+}
+#inputDiv>p{
+    padding: 5px;
+    font-weight: bold;
+    color: gray;
+}
+#loginDiv p{
+    color: gray;
+    margin: 30px 0px;
+}
+p>b{
+    color: #ff3e6c;
+}
+button{
+    width: 100%;
+    background-color: #ff3e6c;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    border: none;
+}
+#checkDiv{
+    width: 80%;
+    margin: auto;
+}

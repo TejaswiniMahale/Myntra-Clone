@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #shoaib
+    {
+       
+        display: grid;
+        grid-template-columns: repeat(6,4fr);
+
+    }
+</style>
+    
+</head>
+<body>
+    <h4>Shoaib</h4>
+    <div id="shoaib">
+    </div>
+    
+</body>
+</html>
+<script>
+  var  cartarr= JSON.parse(localStorage.getItem("Cartsave")) || [];
+
+  console.log(cartarr)
+
+cartarr.map(function(elem,index,array)
+{
+
+    var div = document.createElement("div")
+    
+    div.style.height="90%";
+    div.style.width="90%";
+
+    var img = document.createElement("img")
+    img.setAttribute("src",elem.img)
+   
+    img.style.width="90%";
+    img.style.height="80%";
+
+   var name = document.createElement("h2")
+   name.innerText=elem.name;
+
+   var price = document.createElement("h5")
+   price.innerText=elem.price;
+
+   div.append(img,name,price)
+   
+ document.querySelector("#shoaib").append(div);
+
+
+
+})
+
+</script>

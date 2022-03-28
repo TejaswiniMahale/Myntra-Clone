@@ -1,0 +1,129 @@
+#parent {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+}
+.maindiv>img {
+    width: 220px;
+    height: 300px;
+}
+#products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(600px);
+    box-sizing: border-box;
+    gap:20px;
+    padding: 20px;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+#products>div {
+    padding: 5px;
+    line-height: 1;
+    font-size: 14px;
+}
+#categories>h3:first-child{
+    border-bottom:#e9e9ed solid 1px ;
+}
+#filter {
+    margin-top: 20px;
+    width: 226px;
+    height: 1500px;
+    border-left:none ;
+}
+#filter input{
+    width: 15px;
+    height: 15px;
+    margin-right: 12px;
+}
+label{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+#filter>div {
+    display: grid;
+    width: 88%;
+    padding: 20px 0px 15px 25px;
+    border-bottom: 1px solid #e9e9ed;
+    border-right:#e9e9ed solid 1px;
+
+}
+
+#filter>div>div {
+    display: grid;
+    margin-bottom: 10px;
+
+}
+#mainbar {
+    margin-top: 20px;
+}
+#nav {
+    width: 60%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+#nav select {
+    border: none;
+    padding: 8px;
+    border:0px;
+    outline:0px;
+}
+select:hover {
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+#sort {
+    border: 2px solid #e9e9ed;
+    padding: 5px;
+}
+.wishlist-button{
+ margin-left: 40px;
+   margin-top: 10px;
+   margin-bottom: -5px;
+   width: 55%;
+   background: white;
+   border: #e9e9ed solid 2px;
+   border-radius: 5px;
+}
+.wishlist-button:hover{
+    background: whitesmoke;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.priceDiv {
+    display: flex;
+    width: 90%;
+    margin-top: -12px;
+    margin-bottom: -10px;
+    align-items: center;
+    justify-content: space-between;
+}
+#infoDiv{
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+#option{
+    display: flex; 
+    width: 70%; 
+    position: absolute; 
+    height: 420px; 
+    background: #fff; 
+    border-radius: 0px 0px 4px 4px; 
+    visibility: hidden; 
+}
+
+#select :hover #option { 
+    margin-top: 2.6%; 
+    visibility: visible; 
+    opacity: 1; 
+    box-shadow: 3px 2px 2px 2px black; 
+  } 

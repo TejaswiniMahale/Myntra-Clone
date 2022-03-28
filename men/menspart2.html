@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="menspart2.css">
+<title>Document</title>
+<head>
+</head>
+<body>
+    <div id="navbar">
+        <img id="mainlogo" src="https://cdn.freelogovectors.net/wp-content/uploads/2020/02/myntra-logo-768x768.png"
+            alt="mainlogo">
+        <div>MEN</div>
+        <div>WOMEN</div>
+        <div>KIDS</div>
+        <div>HOME & LIVING</div>
+        <div>BEAUTY</div>
+        <div>STUDIO</div>
+        <div id="searchbar">
+            <i id="sicon" class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for products, brands and more">
+        </div>
+        <div id="profile">
+           <a  href="profile.html"> <i class="fa-regular fa-user"></i></a>
+           <p>Profile</p>
+        </div>
+        <div id="wishlist">
+            <i class="fa-regular fa-heart"></i>
+            <p>Wishlist</p>
+        </div>
+        <div id="bag">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p>Bag</p>
+        </div>
+    </div>
+    <div id="parent">
+    <div id="filter" >
+        <div id="filter-1"style="display:flex; justify-content:space-around;">
+            <div>FILTERS</div>
+            <div style="color:red;">CLEAR ALL</div>
+        </div>
+        <div class="filters">
+            <div>CATEGORIES</div>
+            <div>
+                <label><input type="checkbox" value="kurta"/>Shirts</label>
+                <label><input type="checkbox" value="dresses"/>T-Shirt</label>
+                <label><input type="checkbox" value="heels"/>Hoodies</label>
+                <label><input type="checkbox" value="sarees"/>Sweaters</label>
+                <label><input type="checkbox" value="acesories"/>Dresses</label>
+            </div>
+        </div>
+        <div  class="filters">
+            <div>Brands</div>
+            <div>
+                <label><input type="checkbox" value="adidas"/>HRX </label>
+                <label><input type="checkbox" value="adidas"/>Roadster </label>
+                <label><input type="checkbox" value="elle"/>Highlander </label>
+                <label><input type="checkbox" value="dreamscape"/>WROGN </label>
+                <label> <input type="checkbox" value="dreamscape"/>Bewakoof</label>
+                <label> <input type="checkbox" value="dreamscape"/>HERE&NOW</label>
+            </div>
+        </div>
+        <div  class="filters">
+            <div>Price</div>
+            <div>
+                <label> <input type="checkbox" value="Rs74toRs3181"/>Rs. 174 to Rs. 3181</label>
+                <label> <input type="checkbox" value="Rs3181toRs6288"/>Rs. 3181 to Rs. 6288</label>
+                <label> <input type="checkbox" value="Rs6288toRs9395"/>Rs. 6288 to Rs. 9395</label>
+                <label> <input type="checkbox" value="Rs9395toRs12502"/>Rs. 9395 to Rs. 12502</label>
+                
+            </div>
+        </div>
+        <div class="filters">
+            <div>COLOR</div>
+            <div>
+                <label> <input type="checkbox" value="black"/>Black</label>
+                <label> <input type="checkbox" value="navyblue"/>Navy Blue</label>
+                <label> <input type="checkbox" value="white"/>White</label>
+                <label> <input type="checkbox" value="yellow"/>Yellow</label>
+                <label> <input type="checkbox" value="red"/>Red</label>
+            </div>
+        </div>
+        <div class="filters">
+            <div>DISCOUNT RANGE</div>
+            <div>
+                <label> <input type="checkbox" value="10%&above"/>10% and above</label>
+                <label> <input type="checkbox" value="30%&above"/>20% and above</label>
+                <label> <input type="checkbox" value="50%&above"/>30% and above</label>
+                <label> <input type="checkbox" value="70%&above"/>40% and above</label>
+                <label> <input type="checkbox" value="80%&above"/>70% and above</label>
+            </div>
+        </div>
+    </div>
+    <div >
+        <div class="navbar">
+            <div class="navbar">
+            <div>
+                <select>
+                    <option value>Age</option>
+                    <option value="14y+">14Y+</option>
+                    <option value="9m-12m">9M-12M</option>
+                    <option value="10y-12y">10Y-12Y</option>
+                    <option value="18y-24y">18Y-24Y</option>
+                </select>
+            </div>
+            <div>
+                <select>
+                    <option value>Bundles</option>
+                    <option value="bundles">Bundles</option>
+                    <option value="singlestyles">Single Styles</option>
+                </select>
+            </div>
+            <div>
+                <select>
+                    <option value>Country Of Origin</option>
+                    <option value="allcountries">All Countries</option>
+                </select>
+            </div>
+            <div>
+                <select >
+                    <option value>Size</option>
+                    <Option value="small">S</Option>
+                    <Option value="medium">M</Option>
+                    <Option value="large">L</Option>
+                    <Option value="xl">XL</Option>
+                    <Option value="xxl">XXL</Option>
+                </select>
+            </div>
+        </div>
+            <div>Sort By:
+                <select onchange="sorting()" id="sortby">
+                    <option value>Recommended</option>
+                    <option value="whatsnew">What's New</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="hightolow">Price: Hight to low</option>
+                    <option value="lowtohigh">Price: Low to high</option>
+                    <option value="rating">Customer Rating</option>
+                </select>
+            </div>
+        </div>
+    <div id="parent">
+        <div id="products"></div>
+    </div>
+</div>
+</body>
+</html>
+<script src="./menspart2.js"></script>
+<script src="./mensort.js"></script>

@@ -1,0 +1,8 @@
+#div{
+    display:grid;
+    grid-template-columns: repeat(5,4fr);
+    grid-template-rows: repeat(10);
+    gap: 20px;
+    margin-left: 120px;
+    margin-top: 50px;
+}

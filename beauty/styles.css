@@ -1,0 +1,95 @@
+#parent {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    
+}
+.maindiv>img {
+    width: 100%;
+    height: 300px;
+}
+#products 
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(600px);
+    box-sizing: border-box;
+    gap: 20px;
+    padding: 40px;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+#products>div {
+box-sizing: border-box;
+    padding: 0px 10px;
+    line-height: 1;
+    font-size: 14px;
+}
+#filter {
+    width: 250px;
+}
+#filter input{
+    width: 15px;
+    height: 15px;
+    margin-right: 12px;
+}
+
+#filter>div 
+{
+    display: grid;
+    width: 90%;
+    padding: 10px 10px;
+    border: 1px solid rgb(236, 230, 230);
+}
+#filter>div>div
+{
+    display: grid;
+}
+.navbar {
+    width: 60%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    margin-left: 20px;
+}
+
+.navbar select {
+    border: none;
+    padding: 8px;
+    border: 0px;
+    outline: 0px;
+}
+
+select:hover {
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+#sort {
+    border: 2px solid #e9e9ed;
+    padding: 5px;
+}
+
+.navbarChild {
+    display: flex;
+}
+
+.wishlist-button {
+    width: 95%;
+    background: white;
+    border: #e9e9ed solid 2px;
+}
+
+.wishlist-button:hover {
+    background: whitesmoke;
+}
+
+.priceDiv {
+    display: flex;
+    width: 50%;
+    margin-top: -15px;
+    align-items: center;
+    justify-content: space-between;
+}
